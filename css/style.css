@@ -1,40 +1,3 @@
-/*
-Template Name: Pacifico
-Author URI: 
-Author Name: Epic Themes
-Version: 1.0
-*/
-
-/* --- TABLE OF CONTENT
-
-01. GENERAL LAYOUT
-02. MENU-NAV
-03. FOOTER
-04. HOME
-05. ABOUT
-06. TEAM
-07. SERVICES/FEATURES
-08. PRICING
-09. BLOG
-10. CONTACT
-11. OTHER ELEMENTS
-		a. Newsletter
-		b. Buttons
-		c. Gallery Images Animation
-		d. Testimonials
-		e. Accordion Tabs
-		f. Partners
-		g. Fun Facts
-		h. PopUp Video
-		i. Features List
-12. MEDIA QUERIES
-
---- */
-
-/* ========================================================== */
-/* 			               01. GENERAL LAYOUT                 */
-/* ========================================================== */
-
 ul, ol { 
 	list-style: none; 
 	list-style-image: none; 
@@ -581,9 +544,9 @@ ul.footer_social li a i:hover {
 }
 
 .home-section-overlay{
-	background: #123457; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #123457 , #123457); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #123457 , #123457); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #365b6d; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #365b6d , #365b6d); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #365b6d , #365b6d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	opacity: 0.7;
 	position: absolute;
 	top: 0;
@@ -635,7 +598,7 @@ a.hero-video-text:hover .hero-video-icon{
 	color: #4285f4;
 }
 
-.vegas-background { height: auto!important; z-index: -1; }
+
 
 /* ========================================================== */
 /* 			               05. ABOUT                          */
@@ -856,7 +819,7 @@ ul.team-icon li a.dribble{
     background: -o-linear-gradient(bottom right, #6B02FF, #985BEF);
     background: -moz-linear-gradient(bottom right, #008aff, #1ad2fd);
     background: linear-gradient(135deg, #6B02FF 0%, #985BEF 100%);
-	-webkit-background-clip: text;
+	
 	-webkit-text-fill-color: transparent;
 }
 
@@ -935,7 +898,7 @@ ul.team-icon li a.dribble{
 	border-radius: 8px 8px;
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
-	-webkit-backface-visibility: hidden;
+	
 	-moz-osx-font-smoothing: grayscale;
 }
 
@@ -951,7 +914,7 @@ ul.team-icon li a.dribble{
 	border-radius: 8px 8px;
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
-	-webkit-backface-visibility: hidden;
+	
 	-moz-osx-font-smoothing: grayscale;
 }
 
@@ -971,7 +934,7 @@ ul.team-icon li a.dribble{
 	border-radius: 8px 8px;
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
-	-webkit-backface-visibility: hidden;
+	
 	-moz-osx-font-smoothing: grayscale;
 }
 
@@ -980,8 +943,8 @@ ul.team-icon li a.dribble{
 	-ms-transform: scale(1.03,1.03); /* IE 9 */
     -webkit-transform: scale(1.03,1.03); /* Safari */
 
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
+    
+    
 }
 
 .price-box-white .price-title, .price-box-white ul.pricing-list li.price-value,
@@ -1466,97 +1429,6 @@ input#email_newsletter:-ms-input-placeholder { /* Internet Explorer 10+ */
 	vertical-align: text-top;
 }
 
-/* -----  c) Gallery Images Animations ----- */
-
-.popup-wrapper{
-	display:block;
-	position:relative;
-	overflow:hidden;
-}
-
-.popup-gallery{
-	display:inline-block;
-	position:relative;
-}
-
-.first-gallery{
-	margin-bottom:15px;
-}
-
-.popup-gallery img {
-	position:relative;
-	z-index:10;
-	width: 100%;
-	height: auto;
-}
-
-.popup-gallery:hover img {
-	opacity: 0.25;
-}
-
-.popup-gallery a span.eye-wrapper, 
-.popup-gallery a span.eye-wrapper2 {
-	background-color:#000;
-	position: absolute;
-	display: block;
-	overflow:hidden;
-	z-index: 2;
-	height:100%!important;
-	top: 0%;
-	margin-top: 0px;
-	left: 0%;
-	right: 0%;
-	font-size: 22px;
-	color:#fff;
-	text-align: center;
-	font-weight:300;
-	opacity: 0;
-	-webkit-border-radius: 5px 5px 0 0;
-    -moz-border-radius: 5px 5px 0 0;
-    border-radius: 5px 5px 0 0;
-}
-
-.popup-gallery-rounded a span.eye-wrapper, 
-.popup-gallery-rounded a span.eye-wrapper2 {
-	-webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-}
-
-.popup-gallery a span.eye-wrapper i.eye-icon, .popup-gallery a span.eye-wrapper2 i.eye-icon{
-	position: absolute;
-	display: inline-block;
-	font-size:38px;
-	z-index: 3;
-	top: 50%!important;
-	margin-top: -19px!important;
-	left: 0%;
-	right: 0%;
-}
-
-.popup-gallery a:hover span{
-	opacity: 1;
-}
-
-.popup-gallery img,
-.popup-gallery a span {
-	-webkit-transition: all 0.25s ease-in-out;
-	-moz-transition: all 0.25s ease-in-out;
-	-ms-transition: all 0.25s ease-in-out;
-	-o-transition: all 0.25s ease-in-out;
-	transition: all 0.25s ease-in-out;
-}
-
-.gallery-show {
-	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); 
-	border: 8px solid rgba(255, 255, 255, 0.8);
-	margin: 20px 10px 40px 10px;
-}
-
-.gallery-item-wrapper{
-	float: left;
-	width: 100%;
-}
 
 /* d) Testimonials */
 .testim-inner{
@@ -1723,49 +1595,10 @@ input#email_newsletter:-ms-input-placeholder { /* Internet Explorer 10+ */
 	line-height:54px;
 	color: #008aff;
 	background: #008aff;
-	background: -webkit-gradient(linear, left top, right bottom, from(#b580ff), to(#905ca4));
-    -webkit-background-clip: text;
+	
     -webkit-text-fill-color: transparent;
 }
 
-/* h) PopUp Video */
-
-.youtube-video-wrapper{
-	background: url(http://placehold.it/600x500) top center no-repeat;
-	background-size: initial;
-	padding: 160px 0;
-	position: relative;
-	text-align: center;
-}
-
-.youtube-video-icon {
-	width: 100px;
-	height: 100px;
-	border:2px solid #fff;
-	border-radius: 50% 50%;
-	display: inline-block;
-	background: #fff;
-	transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-}
-
-.youtube-video-icon:hover{
-	background: #6B02FF;
-	border: 2px solid #6B02FF;
-}
-
-.youtube-video-icon:hover i{
-	color: #fff;
-}
-
-.youtube-video-icon i {
-	font-size: 60px;
-	line-height: 100px;
-	color:#6B02FF;
-	margin-left: 10px;
-	transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-}
 
 /* i) Features List */
 
